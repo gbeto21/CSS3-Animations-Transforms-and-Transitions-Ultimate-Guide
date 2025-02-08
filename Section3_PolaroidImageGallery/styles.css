@@ -17,6 +17,7 @@ body {
     display: inline-block;
     background-color: #eee6d8;
     padding: 10px;
+    box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.7);
 }
 
 .polaroid-card-caption {
@@ -51,4 +52,8 @@ body {
     width: 100px;
     height: 25px;
     transform: translate(140px, -5px) rotate(25deg);
+}
+
+.polaroid-card:hover {
+    transform: scale(1.5)
 }
