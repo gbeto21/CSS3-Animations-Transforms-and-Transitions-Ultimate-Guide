@@ -1,3 +1,17 @@
+body {
+    background: url("./img/bg.jpg");
+}
+
+.polaroid-gallery {
+    text-align: center;
+}
+
+.polaroid-gallery-title {
+    font-size: 32px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
 .polaroid-card {
     display: inline-block;
     background-color: #eee6d8;
@@ -10,4 +24,12 @@
     font-size: 12px;
     margin-top: 6px;
     letter-spacing: 2px;
+}
+
+.polaroid-card:nth-of-type(even) {
+    transform: rotate(-7deg);
+}
+
+.polaroid-card:nth-of-type(odd) {
+    transform: rotate(11deg);
 }
