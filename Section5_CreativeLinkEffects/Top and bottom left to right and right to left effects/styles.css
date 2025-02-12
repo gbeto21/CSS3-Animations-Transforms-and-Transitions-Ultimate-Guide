@@ -28,3 +28,63 @@ h2.second {
   color: #fff;
   text-decoration: none;
 }
+
+.first .link::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 5px;
+  background-color: red;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: width 0.7s ease;
+}
+
+.first .link:hover::before,
+.first .link:hover::after {
+  width: 100%;
+}
+
+.first .link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 5px;
+  background-color: red;
+  border-radius: 3px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: width 0.7s ease;
+}
+
+.second .link::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 5px;
+  background-color: red;
+  border-radius: 3px;
+  top: 0;
+  right: 0;
+  transition: width 0.7s ease;
+}
+
+.second .link:hover::before,
+.second .link:hover::after {
+  width: 100%;
+}
+
+.second .link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 5px;
+  background-color: red;
+  border-radius: 3px;
+  bottom: 0;
+  right: 0;
+  transition: width 0.7s ease;
+}
