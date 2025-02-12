@@ -28,3 +28,67 @@ h2.second {
   color: #fff;
   text-decoration: none;
 }
+
+.first .link::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 5px;
+  background-color: #223e61;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  transition: width 0.5s ease;
+}
+
+.first .link:hover::before {
+  width: 100%;
+}
+
+.first .link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 5px;
+  background-color: #223e61;
+  border-radius: 3px;
+  bottom: 0;
+  right: 0;
+  transition: width 0.5s ease;
+}
+
+.first .link:hover::after {
+  width: 100%;
+}
+
+.second .link::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 5px;
+  background-color: #223e61;
+  border-radius: 3px;
+  top: 0;
+  right: 0;
+  transition: width 0.5s ease;
+}
+
+.second .link:hover::before {
+  width: 100%;
+}
+
+.second .link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 5px;
+  background-color: #223e61;
+  border-radius: 3px;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s ease;
+}
+
+.second .link:hover::after {
+  width: 100%;
+}
