@@ -25,3 +25,26 @@ h2.first {
   text-decoration: none;
   overflow: hidden;
 }
+
+.initial-text {
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.first .link::after {
+  content: attr(data-swipe-text);
+  position: absolute;
+  left: -100%;
+  right: 0;
+  top: 0;
+  display: block;
+  transition: left 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.first .link:hover .initial-text {
+  transform: translateX(100%);
+}
+
+.first .link:hover::after {
+  left: 0;
+}
