@@ -24,3 +24,45 @@ h2.first {
   color: #fff;
   text-decoration: none;
 }
+
+.first .link::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-color: #ffffff59;
+  top: 50%;
+  left: -50px;
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
+.first .link:hover::before {
+  left: 50%;
+  transform: rotate(0);
+  top: 0;
+  width: 100px;
+  background-color: white;
+}
+
+.first .link::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  background-color: #ffffff59;
+  top: 50%;
+  left: 100%;
+  right: -50px;
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
+.first .link:hover::after {
+  left: 50%;
+  transform: rotate(0);
+  top: auto;
+  bottom: 0;
+  width: 100px;
+  background-color: white;
+}
