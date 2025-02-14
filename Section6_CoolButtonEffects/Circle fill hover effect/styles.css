@@ -20,3 +20,68 @@ body {
   padding: 20px;
   margin: 20px;
 }
+
+.button.first {
+  overflow: hidden;
+}
+
+.button.first .btn-txt {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s;
+}
+
+.button.first:hover .btn-txt {
+  color: white
+}
+
+.button.first::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #1661d0;
+  border-radius: 50%;
+  transform: translate(calc(-50% - 20px), calc(-50% - 20px));
+  transition: width 0.5s, height 0.5s;
+  z-index: 1;
+}
+
+.button.first:hover::before {
+  width: 500px;
+  height: 500px;
+}
+
+
+.button.second {
+  overflow: hidden;
+}
+
+.button.second .btn-txt {
+  position: relative;
+  z-index: 2;
+  transition: color 0.4s;
+}
+
+.button.second:hover .btn-txt {
+  color: white
+}
+
+.button.second::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -230px;
+  right: -230px;
+  background-color: #1661d0;
+  border-radius: 50%;
+
+  transition: width 0.5s, height 0.5s;
+  z-index: 1;
+}
+
+.button.second:hover::before {
+  width: 500px;
+  height: 500px;
+}
