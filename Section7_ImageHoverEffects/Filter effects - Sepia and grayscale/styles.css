@@ -1,0 +1,30 @@
+body {
+  background-color: #ecf0f1;
+  font-family: Raleway;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-title {
+  margin-top: 30px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+}
+
+figure {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+figure img {
+  width: 100%;
+}
