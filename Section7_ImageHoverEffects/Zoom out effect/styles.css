@@ -31,61 +31,29 @@ figure img {
 
 .fig1 img {
   transition: transform 0.5s;
+  transform: scale(1.2);
 }
 
 .fig1:hover img {
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 .fig2 img {
   transition: width 0.5s;
+  width: 400px;
 }
 
 .fig2:hover img {
-  width: 400px;
+  width: 300px;
 }
 
 .fig3 img {
   transition: 0.3s width, 0.3s transform;
+  transform: translate(-100px);
+  width: 400px;
 }
 
 .fig3:hover img {
-  width: 400px;
-  transform: translate(-100px);
+  width: 300px;
+  transform: translate(0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**/
